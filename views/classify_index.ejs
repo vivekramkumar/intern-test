@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" 
+        content="width=device-width,
+                 initial-scale=1,
+                 shrink-to-fit=no">
+  <title>
+    
+  </title>
+  
+  <!-- Include Bootstrap for styling -->
+  <link rel="stylesheet"
+        href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <!-- Include the Bootstrap Table CSS
+  for the table -->
+  <link rel="stylesheet" 
+        href=
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text text-success text-center ">
+      Similar Records 
+    </h1>
+    <h6 class="text text-success text-center">
+      predicted from the database
+    </h6>
+      <table class="table-striped border-success">
+        <thead>
+          <tr>
+            <th data-field="id">
+              <span class="text-success">
+                Category
+              </span>
+            </th>
+            <th data-field="name">
+              <span class="text-success">
+                Product 
+              </span>
+            </th>
+            
+          </tr> 
+        </thead>
+        <tbody>
+          <% for (var i = 0; i < name.length;  i++) { %>
+            <tr>
+              <td><%= name[i].Product %></td>
+              <td><%= name[i].Category %></td>
+            </tr>    
+           <% } %>
+                                
+            
+                                 
+                                
+                             
+                            
+        </tbody>
+      </table>
+  </div>
+  
+  <!-- Include jQuery and other required
+  files for Bootstrap -->
+  <script src=
+"https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+  
+  <!-- Include the JavaScript file
+  for Bootstrap table -->
+  <script src=
+"https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js">
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+  
+  // Use the given data to create 
+  // the table and display it
+  $('table').bootstrapTable({
+	data: mydata
+  });
+});
+
+// Parse the imported data as JSON
+// and store it
+
+var mydata = JSON.parse(da);
+
+
+    // Specify the JSON data to be displayed
+   
+  </script>
+</body>
+</html>
