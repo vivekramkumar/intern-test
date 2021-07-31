@@ -121,16 +121,16 @@ def main():
     #inp=input()
 
     #t0 = timer()
-    df = pd.read_csv('E:\\intern\\threads1.csv')
-    incident= pd.read_csv('E:\\intern\\Incident.csv')
+    df = pd.read_csv('//home//ec2-user//intern//intern-test//data//threads1.csv')
+    incident= pd.read_csv('//home//ec2-user//intern//intern-test//data//Incident.csv')
     df=clean(df,incident)
 
     #read tokens from csv file
-    with open('E:\\intern\\final_full_length.csv', newline='',encoding="utf-8") as f:
+    with open('//home//ec2-user//intern//intern-test//final_full_length.csv', newline='',encoding="utf-8") as f:
         reader = csv.reader(f)
         data = list(reader)
     #load object from file to increase speed of time
-    with open('E:\\intern\\object.obj', 'rb') as object_file:
+    with open('//home//ec2-user//intern//intern-test//object.obj', 'rb') as object_file:
     
         bmi=pickle.load(object_file)
 
