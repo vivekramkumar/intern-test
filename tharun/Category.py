@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
 
 # Fetching the data to dataframe for trainig the model
-thread_df       = pd.read_excel("E:\\intern\\Sample Data\\threads.xlsx")   # threads data_file
-incident_df     = pd.read_excel("E:\\intern\\Sample Data\\Incidents.xlsx") # incident data_file
+thread_df       = pd.read_excel("//home//ec2-user//intern//intern-test//Sample Data//threads.xlsx")   # threads data_file
+incident_df     = pd.read_excel("//home//ec2-user//intern//intern-test//Sample Data//Incidents.xlsx") # incident data_file
 
 # re-arranging the header names
 header_row              =       0
