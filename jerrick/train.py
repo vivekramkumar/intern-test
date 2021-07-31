@@ -10,9 +10,9 @@ from xgboost import XGBClassifier
 import pickle
 from cleaned import preprocess_text
 #Reading Data files
-Contacts=pd.read_excel("E:\\intern\\Sample Data\\Contacts.xlsx")
-Incidents=pd.read_excel("E:\\intern\\Sample Data\\Incidents.xlsx")
-threads=pd.read_excel("E:\\intern\\Sample Data\\Threads.xlsx")
+Contacts=pd.read_excel("//home//ec2-user//intern//intern-test//Sample Data//Contacts.xlsx")
+Incidents=pd.read_excel("//home//ec2-user//intern//intern-test//Sample Data//Incidents.xlsx")
+threads=pd.read_excel("//home//ec2-user//intern//intern-test//Sample Data//Threads.xlsx")
 #Defining first columns
 header_row           =  0
 """"
